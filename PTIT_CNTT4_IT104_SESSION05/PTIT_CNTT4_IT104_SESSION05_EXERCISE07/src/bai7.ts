@@ -67,5 +67,6 @@ myLibrary.showBooks();
 
 myLibrary.updateBookById(2, "Tuổi Trẻ Đáng Giá Bao Nhiêu - Phiên bản mới", "Rosie Nguyễn");
 
-console.log("\n📚 Danh sách sau khi cập nhật:");
+console.log("\n Danh sách sau khi cập nhật:");
 myLibrary.showBooks();
+
