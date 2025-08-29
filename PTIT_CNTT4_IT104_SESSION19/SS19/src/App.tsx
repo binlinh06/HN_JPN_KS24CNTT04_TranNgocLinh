@@ -17,7 +17,6 @@ export default function App() {
       {/* <Baitap6></Baitap6> */}
       {/* <Baitap7></Baitap7> */}
       {/* <Baitap8></Baitap8> */}
-      <Baitap9></Baitap9>
     </div>
   )
 }
