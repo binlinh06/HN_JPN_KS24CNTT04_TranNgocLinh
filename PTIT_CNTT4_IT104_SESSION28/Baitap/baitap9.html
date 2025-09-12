@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function myMap(arr, callback) {
+        const result = [];
+        for (let i = 0; i < arr.length; i++) {
+          result.push(callback(arr[i], i, arr));
+        }
+        return result;
+      }
+
+      const numbers = [1, 2, 3, 4, 5, 6];
+
+      const doubled = myMap(numbers, function (value, index, array) {
+        return value * 2;
+      });
+
+      console.log(doubled);
+    </script>
+  </body>
+</html>

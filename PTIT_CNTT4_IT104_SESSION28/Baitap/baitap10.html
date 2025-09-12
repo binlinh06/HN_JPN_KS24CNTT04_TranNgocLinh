@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager with Callback</title>
+</head>
+<body>
+  <script>
+    function displayTasks(tasks) {
+      console.log("Danh sách công việc hiện tại:", tasks);
+    }
+
+    function addTask(taskName, tasks, callback) {
+      if (tasks.includes(taskName)) {
+        console.log(`Công việc "${taskName}" đã tồn tại!`);
+      } else {
+        tasks.push(taskName);
+        callback(`Đã thêm công việc: "${taskName}"`);
+      }
+    }
+
+    function deleteTask(taskName, tasks, callback) {
+      const index = tasks.indexOf(taskName);
+      if (index === -1) {
+        console.log(`Công việc "${taskName}" không tồn tại!`);
+      } else {
+        tasks.splice(index, 1);
+        callback(`Đã xóa công việc: "${taskName}"`);
+      }
+    }
+
+    let tasks = ["Học JavaScript", "Làm bài tập", "Đi tập thể dục"];
+
+    displayTasks(tasks);
+
+    addTask("Đi chợ", tasks, function(message) {
+      console.log(message);
+      displayTasks(tasks);
+    });
+
+    addTask("Đi chợ", tasks, function(message) {
+      console.log(message);
+      displayTasks(tasks);
+    });
+
+    deleteTask("Làm bài tập", tasks, function(message) {
+      console.log(message);
+      displayTasks(tasks);
+    });
+
+    deleteTask("Ngủ trưa", tasks, function(message) {
+      console.log(message);
+      displayTasks(tasks);
+    });
+  </script>
+</body>
+</html>
