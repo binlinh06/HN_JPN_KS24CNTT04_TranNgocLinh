@@ -1,0 +1,91 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "product_name": "Laptop Dell XPS 13",
+      "image": "https://example.com/dell.jpg",
+      "price": 28000000,
+      "quantity": 10,
+      "created_at": "2025-09-15T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "product_name": "iPhone 15 Pro",
+      "image": "https://example.com/iphone.jpg",
+      "price": 32000000,
+      "quantity": 5,
+      "created_at": "2025-09-14T10:00:00Z"
+    },
+    {
+      "id": 3,
+      "product_name": "Tai nghe AirPods Pro 2",
+      "image": "https://example.com/airpods.jpg",
+      "price": 6000000,
+      "quantity": 20,
+      "created_at": "2025-09-13T09:00:00Z"
+    },
+    {
+      "id": 4,
+      "product_name": "Samsung Galaxy S24 Ultra",
+      "image": "https://example.com/s24.jpg",
+      "price": 29000000,
+      "quantity": 7,
+      "created_at": "2025-09-12T15:30:00Z"
+    },
+    {
+      "id": 5,
+      "product_name": "Apple Watch Series 9",
+      "image": "https://example.com/watch.jpg",
+      "price": 12000000,
+      "quantity": 12,
+      "created_at": "2025-09-11T11:20:00Z"
+    }
+  ],
+  "studentList": [
+    {
+      "id": 1,
+      "student_name": "Doan Manh Duy",
+      "email": "duy18nd@gmail.com",
+      "address": "Hà Đông, Hà Nội",
+      "phone": "0336620832",
+      "status": true,
+      "created_at": "2025-09-11T11:20:00Z"
+    },
+    {
+      "id": 2,
+      "student_name": "Nguyen Van A",
+      "email": "nguyenvana@example.com",
+      "address": "Cầu Giấy, Hà Nội",
+      "phone": "0912345678",
+      "status": false,
+      "created_at": "2025-09-12T09:15:00Z"
+    },
+    {
+      "id": 3,
+      "student_name": "Tran Thi B",
+      "email": "tranthib@example.com",
+      "address": "Đống Đa, Hà Nội",
+      "phone": "0987654321",
+      "status": true,
+      "created_at": "2025-09-13T14:30:00Z"
+    },
+    {
+      "id": 4,
+      "student_name": "Le Van C",
+      "email": "levanc@example.com",
+      "address": "Thanh Xuân, Hà Nội",
+      "phone": "0978123456",
+      "status": true,
+      "created_at": "2025-09-14T08:45:00Z"
+    },
+    {
+      "id": 5,
+      "student_name": "Pham Thi D",
+      "email": "phamthid@example.com",
+      "address": "Hai Bà Trưng, Hà Nội",
+      "phone": "0369123456",
+      "status": false,
+      "created_at": "2025-09-15T10:20:00Z"
+    }
+  ]
+}
