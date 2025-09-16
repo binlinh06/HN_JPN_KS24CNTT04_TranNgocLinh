@@ -7,59 +7,60 @@ import React from "react";
 // import Home6 from "./components/BT6/Home6";
 // import Home7 from "./components/BT7/Home7";
 // import Home8 from "./components/BT8/Home8";
-import Home9 from "./components/BT9/Home9";
-// import About from "./pages/About";
-// import Contact from "./pages/Contact";
-// import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import NotFound from "./pages/NotFound";
-// import Admin from "./layout/Admin";
-// import UserManager from "./pages/UserManager";
-// import ProductManager from "./pages/ProductManager";
+// import Home9 from "./components/BT9/Home9";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import NotFound from "./pages/NotFound";
+import Admin from "./layout/Admin";
+import UserManager from "./pages/UserManager";
+import ProtectedRoute from "./pages/ProtectedRoute";
+import ProductManager from "./pages/ProductManager";
 import "./App.css";
-// import Order from "./pages/Order";
-// import Login from "./pages/Login";
-// import ProductDetail from "./pages/ProductDetail";
+import Order from "./pages/Order";
+import Login from "./pages/Login";
+import ProductDetail from "./pages/ProductDetail";
 export default function App() {
-  // const routers = createBrowserRouter([
-    // {
-    //   path: "/about",
-    //   element: <About></About>,
-    // },
-    // {
-    //   path: "/contact",
-    //   element: <Contact></Contact>,
-    // },
-    // {
-    //   path: "/login",
-    //   element: <Login></Login>,
-    // },
-    // {
-    //   path: "/admin",
-    //   element: <Admin></Admin>,
-    //   children: [
-    //     {
-    //       path: "user",
-    //       element: <UserManager></UserManager>,
-    //     },
-    //     {
-    //       path: "product",
-    //       element: <ProductManager></ProductManager>,
-    //     },
-    //     {
-    //       path: "order",
-    //       element: <Order></Order>,
-    //     },
-    //     {
-    //       path: "product/:id",
-    //       element: <ProductDetail></ProductDetail>,
-    //     },
-    //   ],
-    // },
-    // {
-    //   path: "*",
-    //   element: <NotFound></NotFound>,
-    // },
-  // ]);
+  const routers = createBrowserRouter([
+    {
+      path: "/about",
+      element: <About></About>,
+    },
+    {
+      path: "/contact",
+      element: <Contact></Contact>,
+    },
+    {
+      path: "/login",
+      element: <Login></Login>,
+    },
+    {
+      path: "/admin",
+      element: <ProtectedRoute element = {<Admin></Admin>}></ProtectedRoute>,
+      children: [
+        {
+          path: "user",
+          element: <UserManager></UserManager>,
+        },
+        {
+          path: "product",
+          element: <ProductManager></ProductManager>,
+        },
+        {
+          path: "order",
+          element: <Order></Order>,
+        },
+        {
+          path: "product/:id",
+          element: <ProductDetail></ProductDetail>,
+        },
+      ],
+    },
+    {
+      path: "*",
+      element: <NotFound></NotFound>,
+    },
+  ]);
   return (
     <div>
       {/* <Home1></Home1> */}
@@ -70,9 +71,9 @@ export default function App() {
       {/* <Home6></Home6> */}
       {/* <Home7></Home7> */}
       {/* <Home8></Home8> */}
-      <Home9></Home9>
-      {/* Router */}
-      {/* <RouterProvider router={routers}></RouterProvider> */}
+      {/* <Home9></Home9> */}
+      Router
+      <RouterProvider router={routers}></RouterProvider>
     </div>
   );
 }

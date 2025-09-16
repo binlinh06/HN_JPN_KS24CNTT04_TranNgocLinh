@@ -28,7 +28,7 @@ export default function ProductManager() {
     <div>
       Trang quan ly san pham
       <h1>Danh sach san pham</h1>
-      <table border={1}>
+      <table border={1  }>
         <thead>
           <tr>
             <th>STT</th>
