@@ -6,6 +6,7 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import axios from "axios";
 import debounce from "lodash.debounce";
+import Badge from "react-bootstrap/Badge";
 
 interface Post {
   id: number;
@@ -284,7 +285,14 @@ export default function ListPost() {
                   />
                 </td>
                 <td>{item.date}</td>
-                <td>{item.status ? "Đã xuất bản" : "Chưa xuất bản"}</td>
+                <td>
+                  {item.status ? (
+                    <Badge bg="success" className="fw-bold px-3 py-2">Đã xuất bản</Badge>
+                  ) : (
+                    <Badge bg="danger" className="fw-bold px-3 py-2">Chưa xuất bản</Badge>
+                  )}
+                </td>
+
                 <td>
                   <Button
                     variant={item.status ? "secondary" : "success"}
