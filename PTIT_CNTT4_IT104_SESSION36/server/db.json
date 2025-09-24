@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "taskName": "Học Redux Toolkitd ok",
+      "completed": false,
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "taskName": "Làm bài tập TS",
+      "completed": true,
+      "priority": "medium"
+    },
+    {
+      "id": 3,
+      "taskName": "Đọc tài liệu json-server",
+      "completed": false,
+      "priority": "low"
+    },
+    {
+      "taskName": "Xin chào",
+      "priority": "medium",
+      "completed": true,
+      "id": 4
+    }
+  ]
+}
