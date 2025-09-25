@@ -1,0 +1,52 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Nguyễn Văn An",
+      "age": 16,
+      "grade": "10A1"
+    },
+    {
+      "id": 2,
+      "name": "Trần Thị Bình",
+      "age": 17,
+      "grade": "11B1"
+    },
+    {
+      "name": "Lê Văn Cường",
+      "age": 15,
+      "grade": "10A2",
+      "id": 6
+    },
+    {
+      "name": "DMD",
+      "age": 16,
+      "grade": "123",
+      "id": 7
+    },
+    {
+      "name": "DMDd",
+      "age": 16,
+      "grade": "123",
+      "id": 8
+    },
+    {
+      "name": "DM",
+      "age": 16,
+      "grade": "123",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "name": "Csadasdasd",
+      "age": 16,
+      "grade": "123"
+    },
+    {
+      "name": "sadsa",
+      "age": 16,
+      "grade": "123",
+      "id": 11
+    }
+  ]
+}
